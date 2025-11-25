@@ -91,6 +91,10 @@ src/
 - **Grid Resolution**: 1.0m
 - **Heuristic**: Euclidean distance
 - **Motion Model**: 8-connected (cardinal + diagonal)
+- **Safety Distance**: 2.0m radius buffer around robot
+  - The planner checks a circular area around each node
+  - No path points will be planned within 2m of obstacles
+  - Ensures safe navigation with clearance
 
 ### Pure Pursuit Controller
 - **Lookahead Distance**: 5.0m
@@ -125,6 +129,14 @@ Update gains in `controller.py`:
 ```python
 def __init__(self, kp_linear=1.0, kp_angular=2.0)
 ```
+
+### Adjust Safety Distance
+Modify in `planner.py`:
+```python
+def __init__(self, resolution=1.0, robot_radius=2.0)  # robot_radius is safety distance
+```
+- Larger `robot_radius` = more safety clearance from obstacles
+- Smaller `robot_radius` = tighter paths, less conservative
 
 ## Next Steps
 
