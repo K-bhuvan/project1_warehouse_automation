@@ -13,7 +13,7 @@ A 2D simulation of an autonomous warehouse rover using Matplotlib for visualizat
 
 ## Quick Start
 
-### Installation
+### Installation.
 
 ```bash
 # Create conda environment
