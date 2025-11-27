@@ -248,12 +248,6 @@ SOFTWARE.
 - Robotics research community for A*, Pure Pursuit, and SLAM algorithms
 - Open-source robotics projects (ROS, TurtleBot) for inspiration
 
-## Author
-
-K. Bhuvan Tej
-- GitHub: [@K-bhuvan](https://github.com/K-bhuvan)
-- Email: bhuvantejkanigiri@gmail.com
-
 ---
 
-**Note**: This project is for educational and research purposes. Feel free to use, modify, and contribute!
+**Note**: This project is for educational and research purposes ONLY. Feel free to use, modify, and contribute!
